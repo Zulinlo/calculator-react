@@ -7,12 +7,13 @@ body {
   background: #EAEBEC;
 }
 
-.container {
+.calculator {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
+  width: 280px;
+  user-select: none;
 }
 
 .calc-body {
@@ -94,8 +95,4 @@ body {
 .blink-me {
   color: #E0B612;
   transition: all 0.5s ease-in;
-}
-
-.blink-hide {
-  color: black;
 }
