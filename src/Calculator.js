@@ -59,7 +59,6 @@ const Calculator = () => {
   };
 
   useEffect(() => {
-    console.log(typed);
     function onKeyup(e) {
       if (/[0-9.%/*\-+]/.test(e.key)) {
         handleInputClick(e.key);
@@ -111,7 +110,7 @@ const Calculator = () => {
         </div>
       </div>
       <div className="calc-button-row">
-        <div className="button c" onClick={() => handleClear()}>
+        <div className="button c" onClick={handleClear}>
           C
         </div>
         <div className="button l" onClick={() => handleInputClick("==")}>
@@ -180,7 +179,7 @@ const Calculator = () => {
         >
           Ans
         </div>
-        <div className="button l" onClick={() => handleCalculate()}>
+        <div className="button l" onClick={handleCalculate}>
           =
         </div>
       </div>
