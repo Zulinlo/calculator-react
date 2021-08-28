@@ -11,6 +11,9 @@ cd src/
 npm start
 ```
 
+## Dependencies
+* mathJS
+
 ## Authors
 
 Sam Wu
